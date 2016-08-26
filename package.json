@@ -1,0 +1,25 @@
+{
+  "name": "pushid",
+  "version": "1.0.0",
+  "description": "Lexicographically sorted string IDs",
+  "devDependencies": {
+    "tape": "^4.6.0"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appsattic/pushid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/appsattic/pushid/issues",
+    "email": "chilts@appsattic.com"
+  },
+  "author": {
+    "name": "Andrew Chilton",
+    "email": "andychilton@gmail.com",
+    "url": "https://chilts.org/"
+  },
+  "license": "ISC"
+}
