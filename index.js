@@ -23,8 +23,8 @@ var lastPushTime = 0;
 // "incremented" by one.
 var lastRandChars = [];
 
-module.exports = function pushid() {
-  var now = new Date().getTime();
+module.exports = function pushid(now) {
+  now = now || new Date().getTime();
   var duplicateTime = (now === lastPushTime);
   lastPushTime = now;
 
