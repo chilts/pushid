@@ -64,3 +64,13 @@ module.exports = function pushid() {
 
   return id;
 };
+
+export function decode (id) {
+  id = id.substring(0,8);
+  var timestamp = 0;
+  for (var i=0; i < id.length; i++) {
+    var c = id.charAt(i);
+    timestamp = timestamp * 64 + PUSH_CHARS.indexOf(c);
+  }
+  return timestamp;
+}
